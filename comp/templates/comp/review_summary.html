@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+    <div>
+        {% if common_adjs %}
+            <table id="data">
+                <tr>
+                    <td> <b>Adjective</b> </td>
+                    <td> <b>Frequency</b> </td>
+                </tr>
+                {% for word, freq in common_adjs %}
+                    <tr>
+                        <td>{{ word }}</td>
+                        <td>{{ freq }}</td>
+                    </tr>
+                {% endfor %}
+            </table>
+        {% else %}
+            <p>The review summary for this company is not available.</p>
+        {% endif %}
+    </div>
+</body>
+</html>

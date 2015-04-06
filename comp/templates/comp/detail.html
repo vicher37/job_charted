@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Rating details - {{ rating.company }}</title>
+    <style>
+    table {
+        width:100%;
+    }
+    table, td {
+        border: 1px solid black;
+        border-collapse: collapse;
+    }
+    td {
+        padding: 5px;
+        text-align: left;
+    }
+    table#t01 tr:nth-child(even) {
+        background-color: #eee;
+    }
+    table#t01 tr:nth-child(odd) {
+       background-color:#fff;
+    }
+    </style>
+</head>
+<body>
+<div>
+    <h2 id="title">
+        For {{ rating.company }}, we have the following data:
+    </h2>
+    <table id="data">
+        <tr>
+            <td>Company name</td>
+            <td>{{ rating.company }}</td>
+        </tr>
+        <tr>
+            <td>Facebook likes</td>
+            <td>{{ rating.FB_likes }}</td>
+        </tr>
+        <tr>
+            <td>Facebook likes score</td>
+            <td>{{ rating.FB_likes_score }}</td>
+        </tr>
+        <tr>
+            <td>Glassdoor overall rating</td>
+            <td>{{ rating.overall_rating }}</td>
+        </tr>
+        <tr>
+            <td>Senior leadership rating</td>
+            <td>{{ rating.senior_leadership_rating }}</td>
+        </tr>
+        <tr>
+            <td>Work life balance rating</td>
+            <td>{{ rating.work_life_balance_rating }}</td>
+        </tr>
+        <tr>
+            <td>Recommend to friend rating</td>
+            <td>{{ rating.recommend_to_friend_rating }}</td>
+        </tr>
+        <tr>
+            <td>Culture and values rating</td>
+            <td>{{ rating.culture_and_values_rating }}</td>
+        </tr>
+    </table>
+</div>
+
+</body>
+</html>
