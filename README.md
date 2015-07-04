@@ -5,4 +5,4 @@ Under development.
 Some code protected from preview. Full code available to employers upon request.
 
 
-This version is obsolete. Back-end code is proprietary now. For front-end presentation, please visit www.jobcharted.com
+<bold>This version is obsolete. Back-end code is proprietary now. For front-end presentation, please visit www.jobcharted.com</bold>
